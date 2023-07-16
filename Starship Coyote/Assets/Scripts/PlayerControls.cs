@@ -4,59 +4,39 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] float moveSpeed = 45f;
+    [SerializeField] float xRange = 50f;
+    [SerializeField] float yRange = 20f;
+    void Update()
     {
-        
+        ProcessTranslation();
+        ProcessRotation();
     }
 
-    // Update is called once per frame
-    void Update()
+    void ProcessTranslation()
     {
         float xThrow = Input.GetAxis("Horizontal");
         float yThrow = Input.GetAxis("Vertical");
-        float offset = 0.1f;
-        float xPos = transform.localPosition.x;
-        float yPos = transform.localPosition.y;
+
+        float xOffset = xThrow * Time.deltaTime * moveSpeed;
+        float yOffset = yThrow * Time.deltaTime * moveSpeed;
+
+        float xPos = transform.localPosition.x + xOffset;
+        float yPos = transform.localPosition.y + yOffset;
+
+        float clampXPos = Mathf.Clamp(xPos, -xRange, xRange);
+        float clampYPos = Mathf.Clamp(yPos, -yRange, yRange + 2);
+
         float zPos = transform.localPosition.z;
-        
-        
-        if(Input.GetKey(KeyCode.D))
-        {
-            xPos += offset;
-        }
-        else if(Input.GetKey(KeyCode.A))
-        {
-            xPos -= offset;
-        }
-        
-        if(Input.GetKey(KeyCode.W))
-        {
-            yPos += offset;
-        }
-        else if(Input.GetKey(KeyCode.S))
-        {
-            yPos -= offset;
-        }
+        transform.localPosition = new Vector3(clampXPos, clampYPos, zPos);
+    }
 
-        if(Input.GetKey(KeyCode.RightArrow))
-        {
-            xPos += offset;
-        }
-        else if(Input.GetKey(KeyCode.LeftArrow))
-        {
-            xPos -= offset;
-        }
-        
-        if(Input.GetKey(KeyCode.UpArrow))
-        {
-            yPos += offset;
-        }
-        else if(Input.GetKey(KeyCode.DownArrow))
-        {
-            yPos -= offset;
-        }
+    void ProcessRotation()
+    {
+        float xRotation = -30f;
+        float yRotation = 30f;
+        float zRotation = 0f;
 
-        transform.localPosition = new Vector3(xPos, yPos, zPos);
+        transform.localRotation = Quaternion.Euler(xRotation, yRotation, zRotation);
     }
 }
