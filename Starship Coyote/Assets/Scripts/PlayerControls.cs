@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 40f;
-    [SerializeField] float xRange = 48f;
-    [SerializeField] float yRange = 22f;
+    [SerializeField] float xRange = 35f;
+    [SerializeField] float yRange = 17f;
     [SerializeField] float positionPitchFactor = -1.25f;
     [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float controlRollFactor = -40f;
-    [SerializeField] float positionYawFactor = -0.005f;
+    [SerializeField] float positionYawFactor = 1f;
 
 
     float xThrow;
