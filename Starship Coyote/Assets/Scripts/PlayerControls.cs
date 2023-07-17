@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 45f;
-    [SerializeField] float xRange = 50f;
-    [SerializeField] float yRange = 20f;
+    [SerializeField] float moveSpeed = 40f;
+    [SerializeField] float xRange = 48f;
+    [SerializeField] float yRange = 22f;
+    [SerializeField] float positionPitchFactor = -1.25f;
+    [SerializeField] float controlPitchFactor = -20f;
+    [SerializeField] float controlRollFactor = -40f;
+    [SerializeField] float positionYawFactor = -0.005f;
+
+
+    float xThrow;
+    float yThrow;
     void Update()
     {
         ProcessTranslation();
@@ -15,8 +23,8 @@ public class PlayerControls : MonoBehaviour
 
     void ProcessTranslation()
     {
-        float xThrow = Input.GetAxis("Horizontal");
-        float yThrow = Input.GetAxis("Vertical");
+        xThrow = Input.GetAxis("Horizontal");
+        yThrow = Input.GetAxis("Vertical");
 
         float xOffset = xThrow * Time.deltaTime * moveSpeed;
         float yOffset = yThrow * Time.deltaTime * moveSpeed;
@@ -33,10 +41,13 @@ public class PlayerControls : MonoBehaviour
 
     void ProcessRotation()
     {
-        float xRotation = -30f;
-        float yRotation = 30f;
-        float zRotation = 0f;
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControlThrow = yThrow * controlPitchFactor;
+        float xPitch = pitchDueToPosition + pitchDueToControlThrow;
 
-        transform.localRotation = Quaternion.Euler(xRotation, yRotation, zRotation);
+        float yYaw = transform.localPosition.x * positionYawFactor;
+        float zRoll = xThrow * controlRollFactor;
+
+        transform.localRotation = Quaternion.Euler(xPitch, yYaw, zRoll);
     }
 }

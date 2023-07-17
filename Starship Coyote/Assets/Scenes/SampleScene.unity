@@ -287,8 +287,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640423673}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 550.6, y: 37.1, z: 296.4}
+  m_LocalRotation: {x: -0.0031166333, y: 0.9938272, z: -0.105064034, w: -0.035486486}
+  m_LocalPosition: {x: 282.56342, y: 37.443756, z: 474.47046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -784,7 +784,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.03489949, y: 0, z: 0, w: 0.99939084}
-  m_LocalPosition: {x: 0, y: 5, z: -46}
+  m_LocalPosition: {x: -0, y: 4, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -902,6 +902,26 @@ PrefabInstance:
     - target: {fileID: 275742172377174485, guid: 40c78af82dc78154abd5b55e4ebbb98e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681149720034490040, guid: 40c78af82dc78154abd5b55e4ebbb98e, type: 3}
+      propertyPath: controlRollFactor
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681149720034490040, guid: 40c78af82dc78154abd5b55e4ebbb98e, type: 3}
+      propertyPath: positionYawFactor
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681149720034490040, guid: 40c78af82dc78154abd5b55e4ebbb98e, type: 3}
+      propertyPath: controlPitchFactor
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681149720034490040, guid: 40c78af82dc78154abd5b55e4ebbb98e, type: 3}
+      propertyPath: positionRollFactor
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681149720034490040, guid: 40c78af82dc78154abd5b55e4ebbb98e, type: 3}
+      propertyPath: positionPitchFactor
+      value: -1.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40c78af82dc78154abd5b55e4ebbb98e, type: 3}
