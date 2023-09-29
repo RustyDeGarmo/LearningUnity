@@ -1,16 +1,31 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 40f;
+    [Header("General Setup Settings")]
+    [Tooltip("How fast the ship moves")] [SerializeField] float moveSpeed = 40f;
+    [Tooltip("How far the ship can move left/right")] 
     [SerializeField] float xRange = 35f;
+    [Tooltip("How far the ship can move up/down")] 
     [SerializeField] float yRange = 17f;
+
+    [Header("Laser Gun Array")]
+    [Tooltip("An array of lasers")] [SerializeField] GameObject[] lasers;
+
+    [Header("Screen Position Based Tuning")]
+    [Tooltip("How much the ship pitches based on position")] 
     [SerializeField] float positionPitchFactor = -1.25f;
-    [SerializeField] float controlPitchFactor = -20f;
-    [SerializeField] float controlRollFactor = -40f;
+    [Tooltip("The ship yaw based on position")] 
     [SerializeField] float positionYawFactor = 1f;
+
+    [Header("Player Input Based Tuning")]
+    [Tooltip("How much the ship pitches based on input")] 
+    [SerializeField] float controlPitchFactor = -20f;
+    [Tooltip("How much the ship rolls based on input")] 
+    [SerializeField] float controlRollFactor = -40f;
 
 
     float xThrow;
@@ -19,6 +34,7 @@ public class PlayerControls : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     void ProcessTranslation()
@@ -49,5 +65,26 @@ public class PlayerControls : MonoBehaviour
         float zRoll = xThrow * controlRollFactor;
 
         transform.localRotation = Quaternion.Euler(xPitch, yYaw, zRoll);
+    }
+
+    void ProcessFiring()
+    {
+        if(Input.GetButton("Fire1"))
+        {
+            SetLasersActive(true);
+        }
+        else
+        {
+            SetLasersActive(false);
+        }
+    }
+
+    void SetLasersActive(bool isActive)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
     }
 }
