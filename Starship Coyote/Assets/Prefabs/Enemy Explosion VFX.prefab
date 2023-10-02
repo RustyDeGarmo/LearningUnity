@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8280673507228301477}
   - component: {fileID: 7421088463411140643}
   - component: {fileID: 2915353614833843857}
+  - component: {fileID: 2114828151609707955}
   m_Layer: 0
-  m_Name: Explosion VFX
+  m_Name: Enemy Explosion VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219532231691967826}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 281.4939, y: 37.16749, z: 474.01956}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -229,16 +230,16 @@ ParticleSystem:
         key0: {r: 0.52156866, g: 0.33333334, b: 0.1137255, a: 1}
         key1: {r: 1, g: 0, b: 0, a: 1}
         key2: {r: 1, g: 0.6341173, b: 0, a: 0}
-        key3: {r: 0.10980393, g: 0.24313727, b: 0.43921572, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0.109803915, g: 0.24313727, b: 0.43921572, a: 0}
+        key4: {r: 0.109803915, g: 0.24313727, b: 0.43921572, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 8481
+        ctime0: 0
         ctime1: 26021
-        ctime2: 43947
-        ctime3: 54163
-        ctime4: 0
+        ctime2: 62644
+        ctime3: 65535
+        ctime4: 65535
         ctime5: 0
         ctime6: 0
         ctime7: 0
@@ -3999,7 +4000,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4115,7 +4116,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.9960785, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4762,7 +4763,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: c851273bfc8bb3b4581983d55e7ea92d, type: 2}
-  - {fileID: 2100000, guid: 2ee365f7bb02bd34e92396f1b3507d28, type: 2}
+  - {fileID: 2100000, guid: 0961a6ce12b7d054ab7a71a3b9c7597e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4813,3 +4814,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &2114828151609707955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219532231691967826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d58a5dff343ac74193bd96db8b90866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructDelay: 1.84
