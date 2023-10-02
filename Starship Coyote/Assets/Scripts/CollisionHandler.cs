@@ -15,14 +15,16 @@ public class CollisionHandler : MonoBehaviour
     {
         Debug.Log($"{this.name} triggered {other.gameObject.name}");
         if(isTransitioning){ return; }
-        StartCrashSequence();
+        StartCrashSequence(); 
         
     }
 
     void StartCrashSequence()
     {
+        collisionParticles.Play();
         isTransitioning = true;
         GetComponent<PlayerControls>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
     }
 
