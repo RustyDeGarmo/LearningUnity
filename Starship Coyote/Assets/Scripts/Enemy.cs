@@ -6,6 +6,13 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathVFX;
     [SerializeField] Transform parent;
+
+    ScoreBoard scoreBoard;
+
+    void Start() 
+    {
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+    }
     void OnParticleCollision(GameObject other) 
     {
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);

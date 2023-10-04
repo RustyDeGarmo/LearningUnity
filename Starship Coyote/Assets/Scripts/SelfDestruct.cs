@@ -7,6 +7,9 @@ public class SelfDestruct : MonoBehaviour
     [SerializeField] float destructDelay = 2;
     void Start()
     {
-        Destroy(gameObject, destructDelay);
+        if(gameObject != null)
+        {
+            Destroy(gameObject, destructDelay);
+        }
     }
 }
