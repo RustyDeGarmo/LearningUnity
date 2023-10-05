@@ -10,5 +10,6 @@ public class ScoreBoard : MonoBehaviour
     public void IncreaseScore(int amountToIncrease)
     {
         score += amountToIncrease;
+        Debug.Log(score);
     }
 }
