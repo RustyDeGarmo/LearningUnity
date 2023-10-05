@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -12,10 +13,18 @@ public class Enemy : MonoBehaviour
     ScoreBoard scoreBoard;
 
 
-    void Start() 
+    void Start()
     {
         scoreBoard = FindObjectOfType<ScoreBoard>();
+        AddRigidBody();
     }
+
+    void AddRigidBody()
+    {
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
+    }
+
     void OnParticleCollision(GameObject other)
     {
         ProcessHit();
