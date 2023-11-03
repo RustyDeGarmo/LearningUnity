@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 1208599643401368120}
   - component: {fileID: 1220126859055855248}
   - component: {fileID: 7537868146545404565}
+  - component: {fileID: -1189260463726861153}
   m_Layer: 0
   m_Name: Skimmer
   m_TagString: Untagged
@@ -188,10 +189,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitVFX: {fileID: 1219532231691967826, guid: d2f1c186ebbdc0a4ea7b731fb7c8a211, type: 3}
-  deathVFX: {fileID: 1219532231691967826, guid: c0911a80a03524d499e06d16ddf2836e, type: 3}
-  parent: {fileID: 0}
+  deathFX: {fileID: 1219532231691967826, guid: c0911a80a03524d499e06d16ddf2836e, type: 3}
   scorePerHit: 15
   hitPoints: 2
+--- !u!65 &-1189260463726861153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205818641931121842}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.1566553, y: 2.955462, z: 10.7425585}
+  m_Center: {x: 0, y: -0.000011980534, z: 0}
 --- !u!1 &1549555154160570979
 GameObject:
   m_ObjectHideFlags: 0

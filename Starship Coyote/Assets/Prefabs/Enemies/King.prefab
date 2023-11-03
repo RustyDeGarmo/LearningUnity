@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 3787424930207287028}
   - component: {fileID: 1399306261897818686}
   - component: {fileID: 6360469117006645746}
+  - component: {fileID: -8405342667232944145}
   m_Layer: 0
   m_Name: King
   m_TagString: Untagged
@@ -195,11 +196,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d2d9ae2fa097741ba141681d76910a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitVFX: {fileID: 0}
-  deathVFX: {fileID: 0}
-  parent: {fileID: 0}
+  hitVFX: {fileID: 1219532231691967826, guid: d2f1c186ebbdc0a4ea7b731fb7c8a211, type: 3}
+  deathFX: {fileID: 1219532231691967826, guid: c0911a80a03524d499e06d16ddf2836e, type: 3}
   scorePerHit: 100
   hitPoints: 20
+--- !u!65 &-8405342667232944145
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606765292454515691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.096986, y: 6.6450253, z: 10.620746}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1211101316130898517
 GameObject:
   m_ObjectHideFlags: 0
