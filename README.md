@@ -12,7 +12,7 @@ Make a note of and keep in mind:
   
 Games:  
   
-1. Bricky Road  
+1. Bricky Road - Obstacle Course  
   
 Character Name: Bricky  
 Player Experience: Nimble/Agile  
@@ -20,7 +20,7 @@ Core Mechanic: Move and dodge obstacles
 Game Loop: Get from A to B without hitting obstacles  
   
   
-2. Ship Shapes  
+2. Ship Shapes - "2D" Spaceship Obstacle Course   
   
 Character Name: Ricky the Rocket  
 Player Experience: Precision/Skillfull  
@@ -42,7 +42,7 @@ Core Feature: Moving from A to B
 9th: Powerups   
   
   
-3. Starship Coyote  
+3. Starship Coyote - Rail Shooter   
   
 Character Name: Yote McRain  
 Player Experience: Chaos  
@@ -65,6 +65,33 @@ Multiple levels - Load the next level when completing a level
 Player Shield - Shield that is depleted when enemies hit the player, recharges over time when not being hit  
 Pickups - Instant shield recovery, faster firing rate, more projectiles, etc.  
 Momentary Invulnerability - After taking damage the player is invincible for a short period  
+
+
+4. Realm Rush - Tower Defense   
+  
+Character Name: The Grand Stratis
+Player Experience: Tactical / Strategic  
+Core Mechanic: The player has limited resources and must  
+ strategically place defenses to stop enemies   
+Game Loop: Survive against waves of enemies as long as possible  
+	The level reloads if the player runs out of gold  
+  
+Theme: 
+Defend against attackers who want to steal all of your gold!   
+  
+Art:  
+Medieval Fantasy Voxel Art   
+
+
+Planned Features:  
+Enemies Pathfinding 
+Defensive Towers 
+Resource Management  
+
+
+Potential Features:  
+Dynamic Enemy Pathfinding  
+Build Timer for Towers
 
 
 
