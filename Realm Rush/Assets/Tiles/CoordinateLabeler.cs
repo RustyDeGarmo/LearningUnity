@@ -12,17 +12,16 @@ public class CoordinateLabeler : MonoBehaviour
     void Awake()
     {
         label = GetComponent<TextMeshPro>();
+        DisplayCoordinates();
     }
 
     void Update()
     {
         if(!Application.isPlaying)
         {
-            
+            DisplayCoordinates();
             UpdateObjectName();
-        }
-        DisplayCoordinates();
-        
+        }        
     }
 
     void DisplayCoordinates()
