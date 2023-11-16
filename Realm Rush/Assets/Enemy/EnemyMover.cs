@@ -9,14 +9,15 @@ public class EnemyMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PrintWaypointName();
+        StartCoroutine(FollowPath());
     }
 
-    void PrintWaypointName()
+    IEnumerator FollowPath()
     {
         foreach(Waypoint waypoint in path)
         {
             Debug.Log(waypoint.name);
+            yield return new WaitForSeconds(1f);
         }
     }
 }
