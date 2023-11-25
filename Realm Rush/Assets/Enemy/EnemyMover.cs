@@ -5,13 +5,13 @@ using UnityEngine;
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] List<Waypoint> path = new List<Waypoint>();
-    [SerializeField] float speed = 1f;
+    [SerializeField] [Range(0f, 5f)] float speed = 1f;
     
 
     void Start()
     {
         StartCoroutine(FollowPath());
-        transform.position = path[0].transform.position;
+        
     }
 
     IEnumerator FollowPath()
@@ -27,7 +27,7 @@ public class EnemyMover : MonoBehaviour
             while(travelPercent < 1f)
             {   
                 if(travelPercent < 0.25f)
-                {
+                {            
                     float rotationAngle = 4 * rotationDegrees * Time.deltaTime * speed;
                     transform.Rotate(new Vector3(0, rotationAngle, 0));
                 }
