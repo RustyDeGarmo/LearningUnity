@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class EnemyMover : MonoBehaviour
 {
@@ -10,8 +11,20 @@ public class EnemyMover : MonoBehaviour
 
     void Start()
     {
+        FindPath();
         StartCoroutine(FollowPath());
-        
+    }
+
+    void FindPath()
+    {
+        path.Clear();
+
+        GameObject parent = GameObject.FindGameObjectWithTag("Path");
+
+        foreach(Transform child in parent.transform)
+        {
+            path.Add(child.GetComponent<Waypoint>());
+        }
     }
 
     IEnumerator FollowPath()
