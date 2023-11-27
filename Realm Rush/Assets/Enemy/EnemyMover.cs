@@ -12,6 +12,7 @@ public class EnemyMover : MonoBehaviour
     void Start()
     {
         FindPath();
+        ReturnToStart();
         StartCoroutine(FollowPath());
     }
 
@@ -25,6 +26,11 @@ public class EnemyMover : MonoBehaviour
         {
             path.Add(child.GetComponent<Waypoint>());
         }
+    }
+
+    void ReturnToStart()
+    {
+        transform.position = path[0].transform.position;
     }
 
     IEnumerator FollowPath()
@@ -50,6 +56,8 @@ public class EnemyMover : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
         }
+
+        Destroy(gameObject);
     }
 
     float degreesToRotate(Vector3 currentDir, Vector3 currentPosition, Vector3 endPosition)
