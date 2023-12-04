@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
 
+[RequireComponent(typeof(Enemy))]
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] List<Waypoint> path = new List<Waypoint>();
@@ -30,7 +31,11 @@ public class EnemyMover : MonoBehaviour
 
         foreach(Transform child in parent.transform)
         {
-            path.Add(child.GetComponent<Waypoint>());
+            Waypoint waypoint = child.GetComponent<Waypoint>();
+            if(waypoint != null)
+            {
+                path.Add(waypoint);
+            }
         }
     }
 
@@ -41,27 +46,32 @@ public class EnemyMover : MonoBehaviour
 
     IEnumerator FollowPath()
     {
-        foreach(Waypoint waypoint in path)
+        foreach (Waypoint waypoint in path)
         {
             Vector3 startPostiion = transform.position;
             Vector3 endPosition = waypoint.transform.position;
             float travelPercent = 0f;
 
             float rotationDegrees = degreesToRotate(this.transform.forward, startPostiion, endPosition);
-            
-            while(travelPercent < 1f)
-            {   
-                if(travelPercent < 0.25f)
-                {            
+
+            while (travelPercent < 1f)
+            {
+                if (travelPercent < 0.25f)
+                {
                     float rotationAngle = 4 * rotationDegrees * Time.deltaTime * speed;
                     transform.Rotate(new Vector3(0, rotationAngle, 0));
                 }
-                
+
                 travelPercent += Time.deltaTime * speed;
                 transform.position = Vector3.Lerp(startPostiion, endPosition, travelPercent);
                 yield return new WaitForEndOfFrame();
             }
         }
+        FinishPath();
+    }
+
+    void FinishPath()
+    {
         enemy.StealGold();
         gameObject.SetActive(false);
     }
