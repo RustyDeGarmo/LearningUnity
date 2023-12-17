@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
 {
-    [SerializeField] Vector2Int startCoords;
-    [SerializeField] Vector2Int destinationCoords;
+    [SerializeField] Vector2Int startCoordinates;
+    public Vector2Int StartCoordinates { get { return startCoordinates; } }
+    [SerializeField] Vector2Int destinationCoordinates;
+    public Vector2Int DestinationCoordinates { get { return destinationCoordinates; } }
 
     Node startNode;
     Node destinationNode;
@@ -26,18 +28,17 @@ public class Pathfinder : MonoBehaviour
         if(gridManager != null)
         {
             grid = gridManager.Grid;
+            startNode = grid[startCoordinates];
+            destinationNode = grid[destinationCoordinates];
         }
     }
 
     void Start()
     {
-        startNode = gridManager.Grid[startCoords];
-        destinationNode = gridManager.Grid[destinationCoords];
-
         GetNewPath();
     }
 
-    List<Node> GetNewPath()
+    public List<Node> GetNewPath()
     {
         gridManager.ResetNodes();
         BreadthFirstSearch();
@@ -71,20 +72,23 @@ public class Pathfinder : MonoBehaviour
 
     void BreadthFirstSearch()
     {
+        startNode.isWalkable = true;
+        destinationNode.isWalkable = true;
+        
         frontier.Clear();
         reached.Clear();
 
         bool isRunning = true;
 
         frontier.Enqueue(startNode);
-        reached.Add(startCoords, startNode);
+        reached.Add(startCoordinates, startNode);
 
         while(frontier.Count > 0 && isRunning)
         {
             currentSearchNode = frontier.Dequeue();
             currentSearchNode.isExplored = true;
             ExploreNeighbors();
-            if(currentSearchNode.coordinates == destinationCoords)
+            if(currentSearchNode.coordinates == destinationCoordinates)
             {
                 isRunning = false;
             }
