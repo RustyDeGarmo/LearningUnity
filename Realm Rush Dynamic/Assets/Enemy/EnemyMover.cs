@@ -17,7 +17,7 @@ public class EnemyMover : MonoBehaviour
 
     void OnEnable()
     {
-        FindPath();
+        RecalculatePath();
         ReturnToStart();
         StartCoroutine(FollowPath());
     }
@@ -29,7 +29,7 @@ public class EnemyMover : MonoBehaviour
         pathfinder = FindObjectOfType<Pathfinder>();
     }
 
-    void FindPath()
+    void RecalculatePath()
     {
         path.Clear();
 
