@@ -94,5 +94,27 @@ Dynamic Enemy Pathfinding
 Build Timer for Towers
 
 
+5. Zombie Runner - FPS  
+  
+Character Name: Survivor  
+Player Experience: Intense  
+Core Mechanic: Pew Pew  
+Core Game Loop: Collect supplies, defeat enemies, survive the level  
+  
+Theme:  
+Dark forests and bunkers. Zombies!!  
+  
+Planned Features:  
+First person camera movement  
+Raytcasting shooting  
+Enemy movement and attack AI  
+Health and Damage system  
+Death / Game Over  
+Weapon switching  
+Resource management and pickups  
+    (ammo, flashlight batteries, food, water)  
+Probuilder geometry  
+
+
 
 
