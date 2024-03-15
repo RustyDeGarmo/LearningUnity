@@ -24,6 +24,12 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
+        
+        if(distanceToTarget > chaseRange)
+        {
+            animator.SetTrigger("idle");
+            isProvoked = false;
+        }
 
         if(isProvoked)
         {
@@ -33,11 +39,6 @@ public class EnemyAI : MonoBehaviour
         {
             isProvoked = true;
         }
-        else
-        {
-            isProvoked = false;
-        }
-        
     }
 
     private void EngageTarget()
@@ -63,7 +64,7 @@ public class EnemyAI : MonoBehaviour
     void AttackTarget()
     {
 
-        animator.SetBool("attack", true);
+        animator.SetBool("attack", true); 
     }
 
     void OnDrawGizmosSelected() {

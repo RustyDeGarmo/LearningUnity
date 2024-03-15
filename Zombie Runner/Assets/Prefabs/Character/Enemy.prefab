@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
-  chaseRange: 5
+  chaseRange: 6
 --- !u!114 &1356098704616227248
 MonoBehaviour:
   m_ObjectHideFlags: 0
