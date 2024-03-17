@@ -1155,6 +1155,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1422632995571662158, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443397, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1199,10 +1203,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8913718542185443397, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 742397941}
+    - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: turnspeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
       value: Enemy
