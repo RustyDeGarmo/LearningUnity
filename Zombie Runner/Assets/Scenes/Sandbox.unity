@@ -1215,6 +1215,10 @@ PrefabInstance:
       propertyPath: turnspeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
       value: Enemy
