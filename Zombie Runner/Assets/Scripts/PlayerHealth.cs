@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] float playerHP = 100;
-
+    
     void Update()
     {
         
@@ -22,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
     
     void PlayerDeath()
     {
-        Debug.Log("you dead");   
+        Debug.Log("you dead"); 
+        GetComponent<DeathHandler>().HandleDeath();
     }
 }
