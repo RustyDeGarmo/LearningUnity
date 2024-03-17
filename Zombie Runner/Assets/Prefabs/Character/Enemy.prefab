@@ -265,6 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
   damage: 40
+  playerHealth: {fileID: 8376756601645314804, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
 --- !u!95 &1422632995571662158
 Animator:
   serializedVersion: 5

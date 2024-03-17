@@ -15,9 +15,4 @@ public class EnemyHealth : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public float GetHP()
-    {
-        return hitPoints;
-    }
 }
