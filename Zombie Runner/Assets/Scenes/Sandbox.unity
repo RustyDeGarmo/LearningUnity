@@ -326,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -626,6 +626,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1617278508}
     m_Modifications:
+    - target: {fileID: 1356098704616227248, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: hitPoints
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1422632995571662158, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -688,7 +692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -1589,6 +1593,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1617278508}
     m_Modifications:
+    - target: {fileID: 1356098704616227248, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: hitPoints
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1422632995571662158, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -1651,7 +1659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -1785,7 +1793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -1813,6 +1821,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1617278508}
     m_Modifications:
+    - target: {fileID: 1356098704616227248, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: hitPoints
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1422632995571662158, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -1875,7 +1887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -2619,6 +2631,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1617278508}
     m_Modifications:
+    - target: {fileID: 1356098704616227248, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: hitPoints
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1422632995571662158, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -2681,7 +2697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -2942,6 +2958,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1617278508}
     m_Modifications:
+    - target: {fileID: 1356098704616227248, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: hitPoints
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1422632995571662158, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -3004,7 +3024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -3111,6 +3131,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1617278508}
     m_Modifications:
+    - target: {fileID: 1356098704616227248, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: hitPoints
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1422632995571662158, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -3173,7 +3197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -3303,6 +3327,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1617278508}
     m_Modifications:
+    - target: {fileID: 1356098704616227248, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
+      propertyPath: hitPoints
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1422632995571662158, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -3365,7 +3393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -3455,7 +3483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
@@ -4205,7 +4233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_StoppingDistance
