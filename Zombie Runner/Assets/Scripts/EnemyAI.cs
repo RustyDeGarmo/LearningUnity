@@ -30,7 +30,6 @@ public class EnemyAI : MonoBehaviour
         if(distanceToTarget > chaseRange)
         {
             animator.SetTrigger("idle");
-            isProvoked = false;
         }
 
         if(isProvoked)
@@ -43,6 +42,11 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void OnDamageTaken()
+    {
+        isProvoked = true;
+    }
+    
     private void EngageTarget()
     {
         FaceTarget();
