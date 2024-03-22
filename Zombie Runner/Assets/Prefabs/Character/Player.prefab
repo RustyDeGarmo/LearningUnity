@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 8376756601645314804}
   - component: {fileID: 361668805329562242}
+  - component: {fileID: 742397942}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -410,6 +411,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
+--- !u!114 &742397942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e8ffd963e40764d8cf3588822be468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ZoomFoV: 20
+  DefaultFoV: 40
+  camera: {fileID: 8762286023985396903}
 --- !u!1001 &168552924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -476,6 +492,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
   m_PrefabInstance: {fileID: 168552924}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8762286023985396903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8762286023885395323, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+  m_PrefabInstance: {fileID: 168552924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1985718473
 PrefabInstance:
   m_ObjectHideFlags: 0
