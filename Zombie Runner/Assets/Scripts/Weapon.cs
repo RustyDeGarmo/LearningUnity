@@ -38,14 +38,11 @@ public class Weapon : MonoBehaviour
         {
             CreateHitImpact(hit);
 
-            EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+            EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();;
             if (target == null) return;
             target.TakeDamage(damage);
         }
-        else
-        {
-            return;
-        }
+        else { return; }
     }
 
     private void CreateHitImpact(RaycastHit hit)

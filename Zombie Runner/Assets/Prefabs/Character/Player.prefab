@@ -426,6 +426,8 @@ MonoBehaviour:
   ZoomFoV: 20
   DefaultFoV: 40
   camera: {fileID: 8762286023985396903}
+  defaultSensitivity: 1
+  zoomSensitivity: 0.5
 --- !u!1001 &168552924
 PrefabInstance:
   m_ObjectHideFlags: 0
