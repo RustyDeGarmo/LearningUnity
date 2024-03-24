@@ -12,11 +12,11 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField] float defaultSensitivity = 1f;
     [SerializeField] float zoomSensitivity = .6f;
 
-    FirstPersonController firstPersonController;
+    FirstPersonController fpsController;
 
     void Start()
     {
-        firstPersonController = GetComponent<FirstPersonController>();
+        fpsController = GetComponent<FirstPersonController>();
     }
 
     void Update()
@@ -24,12 +24,12 @@ public class WeaponZoom : MonoBehaviour
         if(Input.GetMouseButtonDown(1))
         {
             camera.m_Lens.FieldOfView = ZoomFoV;
-            firstPersonController.RotationSpeed = zoomSensitivity;
+            fpsController.RotationSpeed = zoomSensitivity;
         }
         if(Input.GetMouseButtonUp(1))
         {
             camera.m_Lens.FieldOfView = DefaultFoV;
-            firstPersonController.RotationSpeed = defaultSensitivity;
+            fpsController.RotationSpeed = defaultSensitivity;
         }
     }
 }

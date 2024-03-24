@@ -278,7 +278,7 @@ Transform:
   m_GameObject: {fileID: 2337074158997199750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2337074158996965284}
@@ -358,6 +358,7 @@ MonoBehaviour:
   damage: 20
   muzzleFlash: {fileID: 6835772296157169114}
   hitEffect: {fileID: 7093526302990688213}
+  ammoSlot: {fileID: 0}
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,8 +652,20 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6426074221699286879, guid: c296b02fc2f1e81468a6f19ba6387715, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426074221699286879, guid: c296b02fc2f1e81468a6f19ba6387715, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426074221699286879, guid: c296b02fc2f1e81468a6f19ba6387715, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426074221699286879, guid: c296b02fc2f1e81468a6f19ba6387715, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6426074221699286879, guid: c296b02fc2f1e81468a6f19ba6387715, type: 3}
       propertyPath: m_LocalPosition.y
@@ -716,6 +729,22 @@ PrefabInstance:
     - target: {fileID: 1003434949788287003, guid: 3efaf2e27a636944f91d84a20aa29328, type: 3}
       propertyPath: m_Name
       value: Hit Effect VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285626185530589731, guid: 3efaf2e27a636944f91d84a20aa29328, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285626185530589731, guid: 3efaf2e27a636944f91d84a20aa29328, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629285968711428462, guid: 3efaf2e27a636944f91d84a20aa29328, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629285968711428462, guid: 3efaf2e27a636944f91d84a20aa29328, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 8056782283382323325, guid: 3efaf2e27a636944f91d84a20aa29328, type: 3}
       propertyPath: m_RootOrder
