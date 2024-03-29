@@ -19,7 +19,6 @@ public class Weapon : MonoBehaviour
             if(ammoSlot.GetCurrentAmmoAmount() > 0)
             {
                 Shoot();
-                ammoSlot.ReduceCurrentAmmoAmount();
             }
             
         }   
@@ -29,7 +28,7 @@ public class Weapon : MonoBehaviour
     {
         PlayMuzzleFlash();
         ProcessRaycast();
-
+        ammoSlot.ReduceCurrentAmmoAmount();
     }
 
     private void PlayMuzzleFlash()
