@@ -159,9 +159,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1496369764510675895}
-  - {fileID: 8319375373319565433}
   - {fileID: 5988842864504429443}
+  - {fileID: 8319375373319565433}
+  - {fileID: 1496369764510675895}
   m_Father: {fileID: 9005220658103342891}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -181,7 +181,6 @@ GameObject:
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 8376756601645314804}
   - component: {fileID: 361668805329562242}
-  - component: {fileID: 742397942}
   - component: {fileID: 9093182112787511577}
   m_Layer: 8
   m_Name: Player
@@ -414,23 +413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &742397942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8616685848737228372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e8ffd963e40764d8cf3588822be468, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ZoomFoV: 20
-  DefaultFoV: 40
-  camera: {fileID: 8762286023985396903}
-  defaultSensitivity: 1
-  zoomSensitivity: 0.25
 --- !u!114 &9093182112787511577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,7 +591,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -659,6 +641,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4546332941379187220, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 8762286023985396903}
+    - target: {fileID: 4546332941379187220, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 8616685848737228371}
     - target: {fileID: 7503981573076418203, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: FPCamera
       value: 
@@ -729,6 +719,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 2359684307640161931, guid: a3d8e46c37c78d74e9de7cd0af2b3a05, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 8762286023985396903}
+    - target: {fileID: 2359684307640161931, guid: a3d8e46c37c78d74e9de7cd0af2b3a05, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 8616685848737228371}
     - target: {fileID: 7503981573076418203, guid: a3d8e46c37c78d74e9de7cd0af2b3a05, type: 3}
       propertyPath: FPCamera
       value: 
@@ -753,7 +751,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2337074158996965286, guid: 60758fc349359c04b9ef12866bc9f40d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: 60758fc349359c04b9ef12866bc9f40d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -799,6 +797,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol
       objectReference: {fileID: 0}
+    - target: {fileID: 2446330758011907668, guid: 60758fc349359c04b9ef12866bc9f40d, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 8762286023985396903}
+    - target: {fileID: 2446330758011907668, guid: 60758fc349359c04b9ef12866bc9f40d, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 8616685848737228371}
     - target: {fileID: 7503981573076418203, guid: 60758fc349359c04b9ef12866bc9f40d, type: 3}
       propertyPath: FPCamera
       value: 
