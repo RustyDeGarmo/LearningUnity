@@ -16,6 +16,13 @@ public class Weapon : MonoBehaviour
     
     bool canShoot = true;
     
+    void OnEnable() 
+    {   
+        canShoot = true;
+        //lets the player shoot faster than intended if weapon is cycled 
+        //between shots but I don't know how to fix this yet.
+    }
+
     void Update()
     {
         if(Input.GetMouseButtonDown(0) && canShoot)
@@ -39,12 +46,12 @@ public class Weapon : MonoBehaviour
         canShoot = true;
     }
 
-    private void PlayMuzzleFlash()
+    void PlayMuzzleFlash()
     {
         muzzleFlash.Play();
     }
 
-    private void ProcessRaycast()
+    void ProcessRaycast()
     {
         RaycastHit hit;
         if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
@@ -58,7 +65,7 @@ public class Weapon : MonoBehaviour
         else { return; }
     }
 
-    private void CreateHitImpact(RaycastHit hit)
+    void CreateHitImpact(RaycastHit hit)
     {
         GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
         Destroy(impact, 1);
