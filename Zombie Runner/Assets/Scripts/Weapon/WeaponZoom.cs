@@ -14,17 +14,31 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField] float defaultSensitivity = 1f;
     [SerializeField] float zoomSensitivity = .6f;
 
+    void OnDisable() 
+    {
+        ZoomOut();    
+    }
     void Update()
     {
         if(Input.GetMouseButtonDown(1))
         {
-            camera.m_Lens.FieldOfView = ZoomFoV;
-            fpsController.RotationSpeed = zoomSensitivity;
+            ZoomIn();
         }
-        if(Input.GetMouseButtonUp(1))
+        if (Input.GetMouseButtonUp(1))
         {
-            camera.m_Lens.FieldOfView = DefaultFoV;
-            fpsController.RotationSpeed = defaultSensitivity;
+            ZoomOut();
         }
+    }
+
+    private void ZoomIn()
+    {
+        camera.m_Lens.FieldOfView = ZoomFoV;
+        fpsController.RotationSpeed = zoomSensitivity;
+    }
+
+    private void ZoomOut()
+    {
+        camera.m_Lens.FieldOfView = DefaultFoV;
+        fpsController.RotationSpeed = defaultSensitivity;
     }
 }

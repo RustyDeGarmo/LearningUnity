@@ -20,6 +20,7 @@ public class WeaponSwitcher : MonoBehaviour
 
         if(previousWeapon != currentWeapon)
         {
+            // BroadcastMessage("ZoomOut");
             SetWeaponActive();
         }
     }
