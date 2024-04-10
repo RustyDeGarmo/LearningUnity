@@ -427,11 +427,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoSlots:
   - ammoType: 0
-    ammoAmount: 25
+    ammoAmount: 15
   - ammoType: 1
-    ammoAmount: 10
+    ammoAmount: 5
   - ammoType: 2
-    ammoAmount: 20
+    ammoAmount: 10
 --- !u!1001 &168552924
 PrefabInstance:
   m_ObjectHideFlags: 0
