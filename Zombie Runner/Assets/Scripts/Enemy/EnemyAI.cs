@@ -14,6 +14,7 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent navMeshAgent;
     Animator animator;
     float distanceToTarget = Mathf.Infinity;
+    bool isDead = false;
 
     
     void Start()
@@ -63,22 +64,36 @@ public class EnemyAI : MonoBehaviour
 
     void FaceTarget()
     {
-        Vector3 direction = (target.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnspeed);
+        if(!isDead)
+        {
+            Vector3 direction = (target.position - transform.position).normalized;
+            Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnspeed);
+        }
     }
 
     void ChaseTarget()
     {
-        animator.SetBool("attack", false);
-        animator.SetTrigger("move");
-        navMeshAgent.SetDestination(target.position);
+        if(!isDead)
+        {
+            animator.SetBool("attack", false);
+            animator.SetTrigger("move");
+            navMeshAgent.SetDestination(target.position);
+        }
+        
     }
 
     void AttackTarget()
     {
 
         animator.SetBool("attack", true); 
+    }
+
+    void Death()
+    {
+        animator.SetTrigger("death");
+        navMeshAgent.isStopped = true;
+        isDead = true;
     }
 
     void OnDrawGizmosSelected() {

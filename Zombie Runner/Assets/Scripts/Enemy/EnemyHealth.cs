@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
         hitPoints -= dmg;
         if(hitPoints <= 0)
         {
-            Destroy(gameObject);
+            BroadcastMessage("Death");
         }
     }
 }

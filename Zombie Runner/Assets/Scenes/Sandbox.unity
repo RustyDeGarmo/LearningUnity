@@ -328,10 +328,6 @@ PrefabInstance:
       propertyPath: chaseRange
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
@@ -750,10 +746,6 @@ PrefabInstance:
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
@@ -1757,10 +1749,6 @@ PrefabInstance:
       propertyPath: chaseRange
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
       value: Enemy (5)
@@ -1914,10 +1902,6 @@ PrefabInstance:
       propertyPath: chaseRange
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
@@ -2007,10 +1991,6 @@ PrefabInstance:
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
@@ -2916,10 +2896,6 @@ PrefabInstance:
       propertyPath: chaseRange
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
       value: Enemy (4)
@@ -3243,10 +3219,6 @@ PrefabInstance:
       propertyPath: chaseRange
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
       value: Enemy (9)
@@ -3415,10 +3387,6 @@ PrefabInstance:
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
@@ -3612,10 +3580,6 @@ PrefabInstance:
       propertyPath: chaseRange
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
       value: Enemy (8)
@@ -3701,10 +3665,6 @@ PrefabInstance:
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
@@ -4536,10 +4496,6 @@ PrefabInstance:
     - target: {fileID: 8913718542185443400, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: chaseRange
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8913718542185443401, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8913718542185443403, guid: 9fa60a22a9b29684e87fdd31770d258d, type: 3}
       propertyPath: m_Name
