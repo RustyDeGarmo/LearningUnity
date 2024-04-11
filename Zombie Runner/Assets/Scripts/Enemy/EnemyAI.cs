@@ -13,19 +13,27 @@ public class EnemyAI : MonoBehaviour
 
     NavMeshAgent navMeshAgent;
     Animator animator;
+    EnemyHealth enemyHealth;
     float distanceToTarget = Mathf.Infinity;
-    bool isDead = false;
 
     
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        enemyHealth = GetComponent<EnemyHealth>();
     }
 
     
     void Update()
     {
+        if(enemyHealth.IsDead())
+        {
+            enabled = false;
+            navMeshAgent.enabled = false;
+            return;
+        }
+
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         
         if(distanceToTarget > chaseRange)
@@ -64,36 +72,21 @@ public class EnemyAI : MonoBehaviour
 
     void FaceTarget()
     {
-        if(!isDead)
-        {
-            Vector3 direction = (target.position - transform.position).normalized;
-            Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnspeed);
-        }
+        Vector3 direction = (target.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnspeed);
     }
 
     void ChaseTarget()
     {
-        if(!isDead)
-        {
-            animator.SetBool("attack", false);
-            animator.SetTrigger("move");
-            navMeshAgent.SetDestination(target.position);
-        }
-        
+        animator.SetBool("attack", false);
+        animator.SetTrigger("move");
+        navMeshAgent.SetDestination(target.position);
     }
 
     void AttackTarget()
     {
-
         animator.SetBool("attack", true); 
-    }
-
-    void Death()
-    {
-        animator.SetTrigger("death");
-        navMeshAgent.isStopped = true;
-        isDead = true;
     }
 
     void OnDrawGizmosSelected() {
