@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Analytics;
 using UnityEngine.Animations;
 
 public class EnemyAI : MonoBehaviour
@@ -10,6 +11,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnspeed = 5f;
     bool isProvoked = false;
+    bool damageTaken = false;
 
     NavMeshAgent navMeshAgent;
     Animator animator;
@@ -36,9 +38,11 @@ public class EnemyAI : MonoBehaviour
 
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         
-        if(distanceToTarget > chaseRange)
+        if(distanceToTarget > chaseRange && damageTaken == false)
         {
             animator.SetTrigger("idle");
+            isProvoked = false;
+            navMeshAgent.isStopped = true;
         }
 
         if(isProvoked)
@@ -54,10 +58,12 @@ public class EnemyAI : MonoBehaviour
     public void OnDamageTaken()
     {
         isProvoked = true;
+        damageTaken = true;
     }
     
     private void EngageTarget()
     {
+        navMeshAgent.isStopped = false;
         FaceTarget();
         if(distanceToTarget >= navMeshAgent.stoppingDistance)
         {
