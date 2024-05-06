@@ -164,7 +164,7 @@ Transform:
   - {fileID: 8319375373319565433}
   - {fileID: 1496369764510675895}
   m_Father: {fileID: 9005220658103342891}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &987986400
 MonoBehaviour:
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 9005220658103342892}
 --- !u!114 &8376756601645314804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +762,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2337074158996965286, guid: a3d8e46c37c78d74e9de7cd0af2b3a05, type: 3}
   m_PrefabInstance: {fileID: 5988291353670989791}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6666075989209439304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9005220658103342891}
+    m_Modifications:
+    - target: {fileID: 4576204654933975595, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_Name
+      value: Flash Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.044
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.201
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629902412036756051, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7445415202538609105, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_Range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7445415202538609105, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_Color.b
+      value: 0.56310076
+      objectReference: {fileID: 0}
+    - target: {fileID: 7445415202538609105, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6765895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7445415202538609105, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6981132
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea9b3a0d3e2c7c14ba5e3fed01cfc3fc, type: 3}
 --- !u!1001 &7867607654197790052
 PrefabInstance:
   m_ObjectHideFlags: 0
