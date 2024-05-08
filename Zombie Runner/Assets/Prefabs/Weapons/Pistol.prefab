@@ -361,7 +361,8 @@ MonoBehaviour:
   hitEffect: {fileID: 7093526302990688213}
   ammoSlot: {fileID: 0}
   ammoType: 0
-  timeBetweenShots: 0.2
+  timeBetweenShots: 0.1
+  ammoText: {fileID: 0}
 --- !u!114 &2446330758011907668
 MonoBehaviour:
   m_ObjectHideFlags: 0
